@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -78,6 +78,7 @@
 
   <!-- HERO -->
   <header id="top" class="relative px-5 md:px-10 pt-14 md:pt-20 pb-24 overflow-hidden">
+    <!-- decorative shapes -->
     <div class="floaty-slow absolute -top-20 -right-24 w-[420px] h-[420px] rounded-full bg-blush opacity-70 blur-2xl"></div>
     <div class="floaty absolute top-64 -left-32 w-[340px] h-[340px] rounded-full bg-sand opacity-60 blur-2xl"></div>
     <svg class="twinkle absolute top-24 right-[18%] w-8 h-8 text-champagne hidden md:block" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
@@ -104,6 +105,7 @@
         </div>
       </div>
 
+      <!-- rating strip -->
       <div class="hero-anim d-5 mt-14 flex flex-wrap items-center gap-x-10 gap-y-5">
         <div class="flex items-center gap-3">
           <div class="flex gap-1 text-champagne">
@@ -136,9 +138,322 @@
     </div>
   </div>
 
-  <!-- The rest of the page markup is intentionally identical to the original file.
-       To keep this change minimal and safe, ensure the remainder matches your original HTML.
-       If you want, I can copy the full original file content into index.html as well. -->
+  <!-- SERVICES -->
+  <section id="services" class="px-5 md:px-10 py-24 max-w-6xl mx-auto">
+    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <p class="uppercase tracking-[.28em] text-xs text-rosewood font-semibold mb-4">Our Craft</p>
+        <h2 class="font-display font-light text-4xl md:text-6xl text-plum tracking-tight">Signature <em class="font-medium">services</em></h2>
+      </div>
+      <p class="max-w-sm text-plum/70 text-sm md:text-base leading-relaxed">Every service begins with a face-mapping consultation so the result suits your features, not a template.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal service-card bg-white rounded-3xl p-8 border border-sand">
+        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 14c4-6 14-6 18 0"/><path d="M5 17c3.5-4 10.5-4 14 0"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-plum mb-2">Eyebrow Threading</h3>
+        <p class="text-sm text-plum/65 leading-relaxed mb-5">Clean, defined arches with gentle cotton threading. Precise on even the finest hair, kind to sensitive skin.</p>
+        <span class="text-xs uppercase tracking-widest text-rosewood font-semibold">15 mins &middot; Most booked</span>
+      </div>
+
+      <div class="reveal service-card bg-white rounded-3xl p-8 border border-sand" style="transition-delay:.08s">
+        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 15c2-5 6-8 8-8s6 3 8 8"/><path d="M8 11l1 3M12 9v4M16 11l-1 3"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-plum mb-2">Brow Lamination</h3>
+        <p class="text-sm text-plum/65 leading-relaxed mb-5">Fuller, fluffier, perfectly set brows for 6 to 8 weeks. The soap-brow look, without the daily effort.</p>
+        <span class="text-xs uppercase tracking-widest text-rosewood font-semibold">45 mins &middot; Lasts 6-8 weeks</span>
+      </div>
+
+      <div class="reveal service-card bg-white rounded-3xl p-8 border border-sand" style="transition-delay:.16s">
+        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M18.4 5.6l-2.1 2.1M21 12h-3"/><path d="M6 20c1.5-4 4-6 6-6s4.5 2 6 6"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-plum mb-2">Lash Lift</h3>
+        <p class="text-sm text-plum/65 leading-relaxed mb-5">Your natural lashes, curled up and open-eyed for weeks. No extensions, no mascara needed.</p>
+        <span class="text-xs uppercase tracking-widest text-rosewood font-semibold">50 mins &middot; Natural finish</span>
+      </div>
+
+      <div class="reveal service-card bg-white rounded-3xl p-8 border border-sand">
+        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 18c2-6 5-9 8-9s6 3 8 9"/><path d="M9 12c1 1.5 1 3 0 4.5M15 12c-1 1.5-1 3 0 4.5"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-plum mb-2">Lash Perm</h3>
+        <p class="text-sm text-plum/65 leading-relaxed mb-5">A soft, lasting curl set into your own lashes. Wake up ready, every single day.</p>
+        <span class="text-xs uppercase tracking-widest text-rosewood font-semibold">45 mins &middot; Lasts 6+ weeks</span>
+      </div>
+
+      <div class="reveal service-card bg-white rounded-3xl p-8 border border-sand" style="transition-delay:.08s">
+        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 20l8-14-8 4-8-4 8 14z"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-plum mb-2">Eyebrow Shaping</h3>
+        <p class="text-sm text-plum/65 leading-relaxed mb-5">Structured to your bone, brow and eye line. We map first, shape second. No over-plucked regrets.</p>
+        <span class="text-xs uppercase tracking-widest text-rosewood font-semibold">20 mins &middot; Face-mapped</span>
+      </div>
+
+      <div class="reveal service-card bg-white rounded-3xl p-8 border border-sand" style="transition-delay:.16s">
+        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center mb-6">
+          <svg class="w-7 h-7 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2l2.4 5.9L20 9l-4.4 4 1.1 6L12 16l-4.7 3 1.1-6L4 9l5.6-1.1z"/></svg>
+        </div>
+        <h3 class="font-display text-2xl text-plum mb-2">Brow Beautification</h3>
+        <p class="text-sm text-plum/65 leading-relaxed mb-5">Tinting, conditioning and finishing touches that make good brows unforgettable. Ideal before events.</p>
+        <span class="text-xs uppercase tracking-widest text-rosewood font-semibold">30 mins &middot; Event-ready</span>
+      </div>
+    </div>
+
+    <p class="reveal text-center mt-10 text-plum/60 text-sm">And many more: upper lip &amp; facial threading, brow tinting, lash tinting, party looks. <a href="#book" class="text-rosewood font-semibold underline underline-offset-4 hover:text-plum transition-colors">Ask when you book.</a></p>
+  </section>
+
+  <!-- STATS / WHY US -->
+  <section id="why-us" class="bg-plum text-ivory px-5 md:px-10 py-24 relative overflow-hidden">
+    <svg class="twinkle absolute top-12 right-[10%] w-6 h-6 text-champagne" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6 text-center mb-20">
+        <div class="reveal">
+          <div class="count-num font-display text-5xl md:text-6xl font-light text-champagne" data-count="4.8" data-decimals="1">0.0</div>
+          <p class="mt-2 text-sm text-ivory/70 uppercase tracking-widest">Google Rating</p>
+        </div>
+        <div class="reveal" style="transition-delay:.08s">
+          <div class="count-num font-display text-5xl md:text-6xl font-light text-champagne" data-count="77">0</div>
+          <p class="mt-2 text-sm text-ivory/70 uppercase tracking-widest">Client Reviews</p>
+        </div>
+        <div class="reveal" style="transition-delay:.16s">
+          <div class="count-num font-display text-5xl md:text-6xl font-light text-champagne"><span data-count="5">0</span>+</div>
+          <p class="mt-2 text-sm text-ivory/70 uppercase tracking-widest">Years in Business</p>
+        </div>
+        <div class="reveal" style="transition-delay:.24s">
+          <div class="count-num font-display text-5xl md:text-6xl font-light text-champagne"><span data-count="2500">0</span>+</div>
+          <p class="mt-2 text-sm text-ivory/70 uppercase tracking-widest">Happy Faces</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-14 items-center">
+        <div class="reveal-l">
+          <p class="uppercase tracking-[.28em] text-xs text-champagne font-semibold mb-4">Why Beauty Atelier</p>
+          <h2 class="font-display font-light text-4xl md:text-5xl tracking-tight leading-tight">Small studio.<br /><em class="font-medium text-champagne">Serious</em> attention to detail.</h2>
+          <p class="mt-6 text-ivory/75 leading-relaxed max-w-md">We are not a chain. Every client is seen by an experienced brow artist who knows that two millimetres can change a face. That is why our clients keep coming back, and why they bring their sisters, mothers and friends.</p>
+        </div>
+        <div class="reveal-r space-y-5">
+          <div class="flex gap-4 items-start bg-white/5 rounded-2xl p-5 border border-white/10 hover:bg-white/10 transition-colors duration-300">
+            <span class="text-champagne text-xl mt-0.5">&#10022;</span>
+            <div><h4 class="font-semibold mb-1">Hygiene first</h4><p class="text-sm text-ivory/65">Fresh thread for every client, sanitised tools, clean stations. Non-negotiable.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-white/5 rounded-2xl p-5 border border-white/10 hover:bg-white/10 transition-colors duration-300">
+            <span class="text-champagne text-xl mt-0.5">&#10022;</span>
+            <div><h4 class="font-semibold mb-1">Honest advice</h4><p class="text-sm text-ivory/65">If a treatment will not suit you, we will tell you and suggest what will.</p></div>
+          </div>
+          <div class="flex gap-4 items-start bg-white/5 rounded-2xl p-5 border border-white/10 hover:bg-white/10 transition-colors duration-300">
+            <span class="text-champagne text-xl mt-0.5">&#10022;</span>
+            <div><h4 class="font-semibold mb-1">Fair local pricing</h4><p class="text-sm text-ivory/65">Salon-quality results at neighbourhood prices. No surprises at the counter.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="px-5 md:px-10 py-24 max-w-6xl mx-auto">
+    <div class="reveal text-center mb-14">
+      <p class="uppercase tracking-[.28em] text-xs text-rosewood font-semibold mb-4">Loved Locally</p>
+      <h2 class="font-display font-light text-4xl md:text-6xl text-plum tracking-tight">What our <em class="font-medium">77 reviewers</em> say</h2>
+      <div class="mt-5 inline-flex items-center gap-2 bg-white border border-sand rounded-full px-5 py-2.5">
+        <svg class="w-5 h-5 text-champagne" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        <span class="font-display text-xl font-semibold text-plum">4.8 / 5</span>
+        <span class="text-sm text-plum/55">average rating</span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="reveal review-card bg-white rounded-3xl p-8 border border-sand">
+        <div class="flex gap-1 text-champagne mb-4">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </div>
+        <p class="text-plum/75 leading-relaxed mb-6">"Best threading in the area, hands down. My brows have never looked this neat and it never hurts. I have been coming here for two years."</p>
+        <p class="font-semibold text-plum text-sm">Regular client &middot; Nandpuri Colony</p>
+      </div>
+
+      <div class="reveal review-card bg-white rounded-3xl p-8 border border-sand" style="transition-delay:.1s">
+        <div class="flex gap-1 text-champagne mb-4">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </div>
+        <p class="text-plum/75 leading-relaxed mb-6">"Got a lash lift before my sister's wedding and I did not touch mascara for a month. The staff explained everything and the result was so natural."</p>
+        <p class="font-semibold text-plum text-sm">Bridal client &middot; Brij Colony</p>
+      </div>
+
+      <div class="reveal review-card bg-white rounded-3xl p-8 border border-sand" style="transition-delay:.2s">
+        <div class="flex gap-1 text-champagne mb-4">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </div>
+        <p class="text-plum/75 leading-relaxed mb-6">"Very hygienic and the ladies are so sweet. Brow lamination here looks better than what my friend paid double for in a mall salon."</p>
+        <p class="font-semibold text-plum text-sm">First-time visitor &middot; Hawa Sadak</p>
+      </div>
+    </div>
+
+    <p class="reveal text-center mt-8 text-xs text-plum/45">Sample reviews for prototype display. Live Google reviews will be embedded in the final build.</p>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="px-5 md:px-10 py-24 bg-blush/60">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-14 items-start">
+      <div class="reveal-l">
+        <p class="uppercase tracking-[.28em] text-xs text-rosewood font-semibold mb-4">Book a Visit</p>
+        <h2 class="font-display font-light text-4xl md:text-5xl text-plum tracking-tight leading-tight">Reserve your <em class="font-medium">chair</em>.</h2>
+        <p class="mt-5 text-plum/70 leading-relaxed max-w-sm">Pick a service and time, and we will confirm on WhatsApp within minutes. Walk-ins are also welcome from 9:30 AM.</p>
+        <div class="mt-8 space-y-4 text-sm">
+          <div class="flex items-center gap-3 text-plum/80">
+            <svg class="w-5 h-5 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+            Open daily &middot; 9:30 AM onwards
+          </div>
+          <div class="flex items-center gap-3 text-plum/80">
+            <svg class="w-5 h-5 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+            Call or WhatsApp to confirm
+          </div>
+          <div class="flex items-center gap-3 text-plum/80">
+            <svg class="w-5 h-5 text-rosewood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Behind Chambal Powerhouse, Ram Nagar, Jaipur
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-r bg-white rounded-3xl p-8 border border-sand shadow-[0_30px_60px_-30px_rgba(61,34,48,.25)]">
+        <div id="booking-form" class="space-y-5">
+          <div>
+            <label for="bk-name" class="block text-sm font-medium text-plum mb-1.5">Your name</label>
+            <input id="bk-name" type="text" placeholder="e.g. Priya Sharma" class="w-full rounded-xl border border-sand bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rosewood/40 focus:border-rosewood transition-all" />
+          </div>
+          <div>
+            <label for="bk-phone" class="block text-sm font-medium text-plum mb-1.5">Phone / WhatsApp</label>
+            <input id="bk-phone" type="tel" placeholder="98XXX XXXXX" class="w-full rounded-xl border border-sand bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rosewood/40 focus:border-rosewood transition-all" />
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label for="bk-service" class="block text-sm font-medium text-plum mb-1.5">Service</label>
+              <select id="bk-service" class="w-full rounded-xl border border-sand bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rosewood/40 focus:border-rosewood transition-all">
+                <option>Eyebrow Threading</option>
+                <option>Brow Lamination</option>
+                <option>Eyebrow Shaping</option>
+                <option>Brow Beautification</option>
+                <option>Lash Lift</option>
+                <option>Lash Perm</option>
+                <option>Other / Ask us</option>
+              </select>
+            </div>
+            <div>
+              <label for="bk-time" class="block text-sm font-medium text-plum mb-1.5">Preferred time</label>
+              <select id="bk-time" class="w-full rounded-xl border border-sand bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rosewood/40 focus:border-rosewood transition-all">
+                <option>Morning (9:30 - 12)</option>
+                <option>Afternoon (12 - 4)</option>
+                <option>Evening (4 - 8)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="bk-date" class="block text-sm font-medium text-plum mb-1.5">Date</label>
+            <input id="bk-date" type="date" class="w-full rounded-xl border border-sand bg-ivory px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-rosewood/40 focus:border-rosewood transition-all" />
+          </div>
+
+          <button id="bk-submit" class="btn-main w-full bg-rosewood text-ivory rounded-xl py-4 font-semibold"><span>Request Appointment</span></button>
+          <p id="bk-success" class="hidden text-center text-sm font-medium text-green-700 bg-green-50 border border-green-200 rounded-xl py-3 px-4">Request received. We will confirm your slot on WhatsApp shortly. &#10022;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT / LOCATION -->
+  <section id="visit" class="px-5 md:px-10 py-24 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal-l">
+        <p class="uppercase tracking-[.28em] text-xs text-rosewood font-semibold mb-4">Find Us</p>
+        <h2 class="font-display font-light text-4xl md:text-5xl text-plum tracking-tight leading-tight">In the heart of <em class="font-medium">Ram Nagar</em>.</h2>
+        <address class="not-italic mt-6 text-plum/75 leading-loose">
+          Beauty Atelier Salon<br />
+          Behind Chambal Powerhouse, 24 Viditor Road<br />
+          Near Sita Devi Hospital, Brij Colony<br />
+          Hawa Sadak, Nandpuri Colony<br />
+          Ram Nagar, Jaipur, Rajasthan
+        </address>
+
+        <div class="mt-6 flex flex-wrap gap-4">
+          <a href="https://www.google.com/maps/search/?api=1&query=Beauty+Atelier+Salon+Ram+Nagar+Hawa+Sadak+Jaipur" target="_blank" rel="noopener" class="btn-main bg-plum text-ivory px-6 py-3.5 rounded-full text-sm font-medium inline-flex items-center gap-2">
+            <span>Open in Google Maps</span>
+          </a>
+          <a href="#book" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm font-medium border-2 border-plum text-plum hover:bg-plum hover:text-ivory transition-colors duration-300">Book Instead</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 gap-4 max-w-sm">
+          <div class="bg-white border border-sand rounded-2xl p-4">
+            <p class="text-xs uppercase tracking-widest text-plum/50 mb-1">Opens</p>
+            <p class="font-display text-xl text-plum">9:30 AM</p>
+          </div>
+          <div class="bg-white border border-sand rounded-2xl p-4">
+            <p class="text-xs uppercase tracking-widest text-plum/50 mb-1">Landmark</p>
+            <p class="font-display text-xl text-plum">Sita Devi Hospital</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-r relative">
+        <div class="relative rounded-3xl overflow-hidden border border-sand bg-white aspect-[4/3] shadow-[0_30px_60px_-30px_rgba(61,34,48,.3)]">
+          <svg viewBox="0 0 400 300" class="w-full h-full" role="img" aria-label="Stylised neighbourhood map showing the salon location">
+            <rect width="400" height="300" fill="#f3e4de"/>
+            <path d="M0 120 L400 90" stroke="#faf6f1" stroke-width="22"/>
+            <path d="M60 0 L110 300" stroke="#faf6f1" stroke-width="18"/>
+            <path d="M240 0 L200 300" stroke="#faf6f1" stroke-width="26"/>
+            <path d="M0 220 L400 240" stroke="#faf6f1" stroke-width="16"/>
+            <rect x="130" y="30" width="46" height="34" rx="4" fill="#e9dccf"/>
+            <rect x="280" y="140" width="60" height="40" rx="4" fill="#e9dccf"/>
+            <rect x="40" y="160" width="40" height="30" rx="4" fill="#e9dccf"/>
+            <rect x="300" y="40" width="44" height="30" rx="4" fill="#e9dccf"/>
+            <text x="288" y="200" font-size="10" fill="#3d2230" opacity=".55" font-family="Work Sans">Sita Devi Hospital</text>
+            <text x="30" y="150" font-size="10" fill="#3d2230" opacity=".55" font-family="Work Sans">Chambal Powerhouse</text>
+            <text x="230" y="285" font-size="10" fill="#3d2230" opacity=".55" font-family="Work Sans">Hawa Sadak</text>
+            <g transform="translate(185,105)">
+              <circle cx="0" cy="0" r="26" fill="#a4544b" opacity=".15">
+                <animate attributeName="r" values="20;34;20" dur="2.4s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values=".25;.05;.25" dur="2.4s" repeatCount="indefinite"/>
+              </circle>
+              <path d="M0 -18 C10 -18 16 -10 16 -2 C16 8 0 22 0 22 C0 22 -16 8 -16 -2 C-16 -10 -10 -18 0 -18 Z" fill="#a4544b"/>
+              <circle cx="0" cy="-3" r="5.5" fill="#faf6f1"/>
+            </g>
+          </svg>
+          <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur rounded-xl px-4 py-2.5 text-sm font-medium text-plum border border-sand flex items-center gap-2">
+            <span class="relative flex h-2.5 w-2.5"><span class="pulse-dot absolute inline-flex h-2.5 w-2.5 rounded-full bg-rosewood"></span></span>
+            Beauty Atelier Salon
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <footer class="bg-plum text-ivory">
+    <div class="px-5 md:px-10 py-20 max-w-6xl mx-auto text-center">
+      <p class="reveal font-display italic text-champagne text-lg mb-4">Your face deserves an atelier.</p>
+      <h2 class="reveal font-display font-light text-4xl md:text-6xl tracking-tight mb-8">Come, sit. <em class="font-medium text-champagne">Leave lovelier.</em></h2>
+      <a href="#book" class="reveal btn-main inline-block bg-rosewood text-ivory px-10 py-4 rounded-full font-semibold"><span>Book Your Appointment</span></a>
+    </div>
+    <div class="border-t border-white/10 px-5 md:px-10 py-6">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-ivory/50">
+        <p>&copy; 2026 Beauty Atelier Salon &middot; Ram Nagar, Jaipur</p>
+        <p>4.8 &#9733; from 77 reviews &middot; 5+ years in business &middot; Opens 9:30 AM</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js" defer></script>
 </body>
